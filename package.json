@@ -1,0 +1,16 @@
+{
+  "name": "DOFMail",
+  "version": "1.0.0",
+  "description": "Mailing system created for getting rid of overthinking :v",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "DOF",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
