@@ -6,7 +6,8 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-	fs.createReadStream(__dirname + '/index.html').pipe(res)
+	// fs.createReadStream(__dirname + '/index.html').pipe(res)
+	res.send('asdasd')
 	res.status(200)
 
 	console.log("REQUEST - " + req + " / " + res)
