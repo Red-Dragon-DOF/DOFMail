@@ -1,12 +1,13 @@
 /* Let's Start */
-
+const fs = require('fs')
 const express = require('express');
 
 const app = express()
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-	res.send('working!');
+	fs.createReadStream(__dirname + '/index.html').pipe(res)
+	res.status(200)
 
 	console.log("REQUEST - " + req + " / " + res)
 })
